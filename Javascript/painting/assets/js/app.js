@@ -8,7 +8,7 @@ const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
 
 const INITIAL_COLOR = "#2c2c2c";
-const CANVAS_SIZE = 350;
+const CANVAS_SIZE = 300;
 
 
 
