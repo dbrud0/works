@@ -11,7 +11,7 @@
   <body>
     <canvas id="jsCanvas" class="canvas"></canvas>
     <div class="controls">
-      <div class="controls__range">
+       <div class="controls__range">
         <input
           type="range"
           id="jsRange"
@@ -20,10 +20,6 @@
           value="2.5"
           step="0.1"
         /><!--0.1씩 조절가능-->
-      </div>
-      <div class="controls__btns">
-        <button id="jsMode">Fill</button>
-        <button id="jsSave">Save</button>
       </div>
       <div class="controls__colors" id="jsColors">
         <div
@@ -62,6 +58,10 @@
           class="controls__color jsColor"
           style="background-color: #5856d6"
         ></div>
+      </div>
+       <div class="controls__btns">
+        <button id="jsMode">Fill</button>
+        <button id="jsSave">Save</button>
       </div>
     </div>
     <script src="assets/js/app.js"></script>
