@@ -13,17 +13,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
+  padding: 3% 0;
 }
 .canvas {
-  width: 50vw;
-  height: 50vw;
+  width: 40vw;
+  height: 40vw;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 3px 7px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .controls {
-  margin-left: 50px;
+  margin-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
