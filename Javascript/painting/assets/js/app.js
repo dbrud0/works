@@ -8,7 +8,7 @@ const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
 
 const INITIAL_COLOR = "#2c2c2c";
-const CANVAS_SIZE = 300;
+const CANVAS_SIZE = 250;
 
 
 
@@ -91,7 +91,7 @@ function handleSaveClick(){
     const image = canvas.toDataURL();
     const link = document.createElement("a");
     link.href = image;
-    link.download = "PaintJS[🎨]";
+    link.download = "PaintJS";
     link.click();
 }
 
