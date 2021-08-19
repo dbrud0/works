@@ -112,6 +112,7 @@ nav > ul > li > ul > li > a:hover {
   background-size: 100%, 100%;
   background: url(../image/imgslide1.jpg) no-repeat center center;
   animation: slide_ani 15s infinite;
+  min-width: 1400px;
 }
 
 #contents {
