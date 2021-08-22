@@ -26,13 +26,11 @@ li {
 /*layout style*/
 #header {
   /*background:rgba(0,0,0,0.3);*/
-  opacity: ;
   width: 100%;
   position: fixed;
   height: 55px;
   /*border-bottom:1px solid rgba(255,255,255,0.7);*/
   z-index: 10;
-  box-sizing: border-box;
 }
 
 header {
@@ -108,7 +106,7 @@ header h1 img {
 
 #subNav ul a {
   color: white;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 #navi a:hover,
@@ -130,6 +128,7 @@ header h1 img {
 #container {
   position: relative;
   top: 0;
+  padding-bottom: 5%;
 }
 
 .swiper-slide {
@@ -163,12 +162,14 @@ header h1 img {
 }
 .swiper-pagination {
   color: #fff;
-  width: 90px;
-  height: 50px;
+  width: 9vh;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.4);
   font-weight: bold;
-  font-size: 1.2em;
-  line-height: 3;
+  font-size: 1.1vw;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -219,7 +220,7 @@ header h1 img {
 
 .fac ul li .hover p {
   text-align: center;
-  font: 20px/1.5 "arial";
+  font: 2vw/1.5 "arial";
   font-weight: bold;
   color: white;
   position: relative;
@@ -243,7 +244,6 @@ header h1 img {
 
 .special h2 {
   white-space: nowrap;
-
   border-bottom: 3px solid #4f3517;
   font-size: 1.3vw;
   padding: 0 5px;
@@ -272,7 +272,7 @@ header h1 img {
 
 .special ul li .hover p {
   text-align: center;
-  font: 20px/1.5 "arial";
+  font: 2vw/1.5 "arial";
   font-weight: bold;
   color: white;
   position: relative;
@@ -297,66 +297,54 @@ header h1 img {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  line-height: 2;
   color: #333;
-}
-
-#roomInfo h2 {
-  font-size: 3em;
+  font-size: 2.5vw;
+  padding: 2% 0;
 }
 
 #roomInfo p {
-  font-size: 1.2em;
+  font-size: 0.5em;
   font-weight: bold;
   white-space: nowrap;
+  padding: 4% 0;
 }
 
 #roomInfo a {
   background: #333;
-  width: 200px;
-  height: 50px;
+  padding: 10px 20px;
   display: inline-block;
-  font-size: 1.2em;
-  padding-top: 10px;
-  margin-top: 20px;
+  font-size: 0.4em;
+  font-weight: bold;
   box-sizing: border-box;
   color: #fff;
+}
+#roomInfo a:hover {
+  color: #ffc;
 }
 
 /*footer*/
 footer {
   width: 100%;
-  margin: 0 auto;
-  position: relative;
-  top: 50px;
   border: 1px solid #eee;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   padding: 1% 0;
+  font-size: 1vw;
+  white-space: nowrap;
 }
 
-footer .logoB {
-  top: 15px;
-  left: 50px;
+footer div {
+  display: flex;
+  align-items: center;
 }
 
 footer p {
-  left: 200px;
-  top: 15px;
   line-height: 2;
-  padding-bottom: 30px;
-  box-sizing: border-box;
 }
 
-footer .info {
-  top: 15px;
-  right: 400px;
-}
-
-footer .sns {
-  right: 50px;
-  top: 15px;
-  margin: 0 8px;
+footer .sns a {
+  padding: 0 2px;
 }
 
 @keyframes slide_ani {
