@@ -318,6 +318,10 @@ header h1 img {
   box-sizing: border-box;
   color: #fff;
 }
+
+#roomInfo i {
+  font-size: 0.4em;
+}
 #roomInfo a:hover {
   color: #ffc;
 }
