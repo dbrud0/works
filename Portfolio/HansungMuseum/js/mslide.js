@@ -80,26 +80,57 @@ $(function(){
 	
 });
 
+/*TOP 버튼 */
+
 $(function(){
 
-	$("#tab").hide();	
+	$("#top").hide();	
 	
 	$(window).scroll(function(){
 		
 		if($(this).scrollTop()>300){
 			
-				$("#tab").fadeIn(400);	
+				$("#top").fadeIn(400);	
 				S('header').css("position","fixed");
 			
 		}else{
-				$("#tab").fadeOut(400);	
+				$("#top").fadeOut(400);	
 				S('header').css("position","absolute");
 			  }
 		
 	});		
 	
+/* 네비*/
+$('.subMenu').hide();
+$('.mainMenu>li').mouseover(function(){
+	$(this).find('.subMenu').stop().slideDown(300);                          
+});
+$('.mainMenu>li').mouseout(function(){
+  $(this).find('.subMenu').stop().slideUp(300);    
+});
+
+});
+
+// tabmenu - sub
+var $Msubmenu = $('.tab-menu > li');
+$Msubmenu.click(function () {
+  $(this).find('.mobile-subMenu > li').slideToggle();
 });
 
 
+$('.mobile-tab-menu-wrap').hide();
+$('.tab-bar').click(function () {
+	
+	  $('.mobile-tab-menu-wrap').css('left', '0%');
+	  $('.mobile-tab-menu-wrap').show();
+
+  });
+
+  $('.close-btn').click(function () {
+	
+	$('.mobile-tab-menu-wrap').css('left', '-35%');
+	$('.mobile-tab-menu-wrap').hide();
+
+});
 
 
