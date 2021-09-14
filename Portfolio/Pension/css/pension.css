@@ -129,8 +129,12 @@ header h1 img {
   position: relative;
   top: 0;
   padding-bottom: 5%;
+  overflow: hidden;
 }
 
+.swiper-container {
+  position: relative;
+}
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -162,8 +166,8 @@ header h1 img {
 }
 .swiper-pagination {
   color: #fff;
-  width: 9vh;
-  height: 6vh;
+  width: 6vw;
+  height: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,6 +175,7 @@ header h1 img {
   font-weight: bold;
   font-size: 1.1vw;
   position: absolute;
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -371,5 +376,15 @@ footer .sns a {
   75% {
     background: url(../image/slide3.jpg) no-repeat center center;
     background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer .sns {
+    display: none;
   }
 }
